@@ -17,6 +17,7 @@ nav{
     align-items: center;
     margin-top: 6px;
 }
+/*PORTADA*/
 .logo {
     font-family: 'Playfair Display', serif;
     font-size: 30px;
@@ -72,6 +73,7 @@ nav{
     justify-content: center;
     text-align: center;
 }
+/*APARTADO PRODUCTOS*/
 .intro-productos p{
     font-size: 1em;
     margin: 100px;
@@ -113,6 +115,7 @@ nav{
     margin-top: 10px;
     font-size: 14px;
 }
+/*APARTADO INICIO*/
 .trilogias-titulo, 
 .destacados-titulo{
     font-family: 'Roboto', sans-serif;
@@ -191,7 +194,7 @@ nav{
 /*APARTADO NOVEDADES*/
 .noticias-contenedor {
     padding: 40px 20px;
-    background-color: #1f1f1f; /* gris casi negro */
+    background-color: #1f1f1f; 
     color: #f1f1f1;
 }
 .noticias-titulo {
@@ -225,11 +228,70 @@ nav{
 }
 .noticia a {
     text-decoration: none;
-    color: #9ecfff; /* azul suave */
+    color: #9ecfff; 
     font-weight: bold;
 }
 .noticia a:hover {
     text-decoration: underline;
+}
+/*APARTADO CONTACTO*/
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    background-color: #fefefe;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contacto-texto {
+    flex: 1 1 300px;
+    font-family: 'Roboto', sans-serif;
+}
+.contacto-texto h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.contacto-texto p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+.formulario {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.formulario label {
+    font-weight: 500;
+    color: #333;
+}
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.formulario button {
+    padding: 0.8rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.formulario button:hover {
+    background-color: #555;
 }
 /*FOOTER*/
 .contenedor-ft{
