@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+}
+header {
+    background-color: #1b1b1b;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 6px;
+}
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 20px;
+}
+.nav-links a:hover{
+    color: #fff;
+}
+.main{
+    background: url(../images/libro3.jpg);
+    background-position:center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+.main::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+  }
+.main-titulo{
+    position: relative;
+    color: #fff;
+}
+.main-titulo h2{
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.bienvenida p{
+    font-size: 1em;
+    margin: 100px;
+    justify-content: center;
+    text-align: center;
+}
+.intro-productos p{
+    font-size: 1em;
+    margin: 100px;
+    justify-content: center;
+    text-align: center;
+}
+.libro-seleccion{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 20px;
+    background-color: #1c1c1e;
+    gap: 20px;
+}
+.libro{
+    background: #2c2c2e;
+    text-align: center;
+    color: #111;
+    padding: 10px;
+    border-radius: 8px;
+    height: 330px;
+}
+.libro img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+}
+.libro h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14;
+    color: #ffffff;
+    margin-top: 3px;
+}
+.libro p{
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.trilogias-titulo, 
+.destacados-titulo{
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.destacados-contenedor{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 20px;
+    background-color: #1c1c1e;
+    gap: 10px;
+}
+.libro-destacados{
+    background: #2c2c2e;
+    text-align: center;
+    color: #111;
+    padding: 10px;
+    border-radius: 8px;
+    height: 350px;
+}
+.libro-destacados img{
+    width: 180px;
+    height: 230px;
+    object-fit: cover;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+}
+.libro-destacados h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.libro-destacados p{
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.trilogias-contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #1c1c1e;
+    gap: 40px;
+}
+.libro-trilogias{
+    background: #2c2c2e;
+    text-align: center;
+    color: #111;
+    padding-bottom: 45px;
+    border-radius: 8px;
+    height: 350px;
+    width: 550px;
+}
+.libro-trilogias img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    padding-bottom: 10px;
+}
+.libro-trilogias h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+.libro-trilogias p{
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 14px;
+}
+/*APARTADO NOVEDADES*/
+.noticias-contenedor {
+    padding: 40px 20px;
+    background-color: #1f1f1f; /* gris casi negro */
+    color: #f1f1f1;
+}
+.noticias-titulo {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff; 
+    letter-spacing: 2px;
+}
+.noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.noticia {
+    background-color: #2a2a2a;
+    border: 1px solid #3e3e3e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.noticia h3 {
+    font-size: 20px;
+    color: #ffffff; 
+    margin-bottom: 10px;
+}
+.noticia p {
+    font-size: 15px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+.noticia a {
+    text-decoration: none;
+    color: #9ecfff; /* azul suave */
+    font-weight: bold;
+}
+.noticia a:hover {
+    text-decoration: underline;
+}
+/*FOOTER*/
+.contenedor-ft{
+    height: 30%;
+    width: 100%;
+    margin: 20px 0px;
+}
+.footer-p{
+    text-align: center;
+}
+
+
+
+
