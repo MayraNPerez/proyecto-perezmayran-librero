@@ -37,7 +37,7 @@ nav{
 .nav-links a:hover{
     color: #fff;
 }
-.main{
+.main{ /*UTILIZO UNA IMAGEN A MODO DE FONDO COMO PORTADA CON EL NOMBRE DE LA LIBRERIA POR ENCIMA*/
     background: url(../images/libro3.jpg);
     background-position:center;
     background-size: cover;
@@ -48,7 +48,7 @@ nav{
     position: relative;
     text-align: center;
 }
-.main::before {
+.main::before { /*PONGO UNA SOMBRA POR ENCIMA DE LA IMAGEN PARA QUE EL TITULO SEA MÁS LEGIBLE*/
     content: '';
     position: absolute;
     inset: 0;
@@ -74,20 +74,22 @@ nav{
     text-align: center;
 }
 /*APARTADO PRODUCTOS*/
+.intro-productos,
 .intro-productos p{
+    max-width: 1200px;
     font-size: 1em;
     margin: 100px;
     justify-content: center;
     text-align: center;
 }
-.libro-seleccion{
+.libro-seleccion{ /*CREO 6 COLUMNAS POR FILA Y UBICO LAS IMAGENES A MODO DE BIBLIOTECA*/
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     padding: 20px;
     background-color: #1c1c1e;
     gap: 20px;
 }
-.libro{
+.libro{ /*DISEÑO DE LA CAJA QUE CONTIENE LOS LIBROS*/
     background: #2c2c2e;
     text-align: center;
     color: #111;
@@ -234,6 +236,44 @@ nav{
 .noticia a:hover {
     text-decoration: underline;
 }
+/*APARTADO NOSOTROS*/
+.contenedor-nosotros {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.nosotros-texto {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-left: 5px solid #333;
+    border-radius: 8px;
+}
+.nosotros-texto h2,
+.nosotros-texto h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.nosotros-texto p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+.nosotros-img {
+    display: flex;
+    justify-content: center;
+}
+.nosotros-img img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 /*APARTADO CONTACTO*/
 .contacto {
     display: flex;
@@ -294,7 +334,7 @@ nav{
     background-color: #555;
 }
 /*FOOTER*/
-.contenedor-ft{
+.contenedor-ft{ /*FOOTER CHIQUITO Y BÁSICO PERO SUTIL :D*/
     height: 30%;
     width: 100%;
     margin: 20px 0px;
