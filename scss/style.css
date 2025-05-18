@@ -99,7 +99,8 @@ body .destacados-contenedor .libro-destacados {
 body .destacados-contenedor .libro-destacados img {
   width: 180px;
   height: 230px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   margin-bottom: 10px;
 }
@@ -133,7 +134,8 @@ body .trilogias-contenedor .libro-trilogias {
 body .trilogias-contenedor .libro-trilogias img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   padding-bottom: 10px;
 }
@@ -183,7 +185,8 @@ body .trilogias-contenedor .libro-trilogias p {
 .libro-seleccion .libro img {
   width: 100%;
   height: 230px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   margin-bottom: 10px;
 }
@@ -364,6 +367,4 @@ body .trilogias-contenedor .libro-trilogias p {
 
 .footer-p {
   text-align: center;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
