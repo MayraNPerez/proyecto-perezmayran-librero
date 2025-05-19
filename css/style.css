@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/*VARIABLES*/
+/*MAQUETA PARA REUTILIZAR*/
+body .trilogias-titulo,
+body .destacados-titulo {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -98,13 +108,6 @@ body .bienvenida p {
   margin: 100px;
   justify-content: center;
   text-align: center;
-}
-body .trilogias-titulo,
-body .destacados-titulo {
-  font-family: "Playfair Display", serif;
-  margin: 15px;
-  font-size: 25px;
-  letter-spacing: 1px;
 }
 body .destacados-contenedor {
   display: grid;
@@ -229,7 +232,7 @@ body .trilogias-contenedor .libro-trilogias p {
 /*APARTADO NOVEDADES*/
 .noticias-contenedor {
   padding: 40px 20px;
-  background-color: #1f1f1f;
+  background-color: #1c1c1e;
   color: #f1f1f1;
 }
 .noticias-contenedor .noticias-titulo {
