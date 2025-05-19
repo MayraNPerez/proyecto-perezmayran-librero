@@ -31,42 +31,67 @@ body header nav .nav-links {
   gap: 30px;
 }
 body header nav .nav-links a {
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: #ccc;
-  font-size: 20px;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 body header nav .nav-links a:hover {
-  color: #fff;
+  color: #A4B465;
+  transition: all 0.5s ease;
 }
-body .main { /*UTILIZO UNA IMAGEN A MODO DE FONDO COMO PORTADA CON EL NOMBRE DE LA LIBRERIA POR ENCIMA*/
-  background: url(../images/libro3.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body .main { /*CREO DOS COLUMNAS CON GRID, EN UNA UBICO EL TITULO CON UN PARRAFO Y UN BOTON QUE DIRIGE A LA PAGINA DE CONTACTO,
+                 POR OTRO LADO UBICO LA IMAGEN*/
+  padding: 0 14%;
+  width: 100%;
+  height: 100vh;
+  background-color: #1b1b1b;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   position: relative;
-  text-align: center;
+  align-items: center;
+  gap: 2rem;
 }
 body .main .main-titulo {
   position: relative;
-  color: #fff;
+}
+body .main .main-titulo h5 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
 }
 body .main .main-titulo h2 {
-  font-size: 80px;
-  margin-bottom: 20px;
+  color: #A4B465;
+  text-shadow: #555;
+  font-size: 120px;
+  margin-bottom: 25px;
   font-family: "Playfair Display", serif;
 }
 body .main .main-titulo p {
   font-size: 18px;
   margin-bottom: 30px;
+  letter-spacing: 1px;
 }
-body .main::before { /*PONGO UNA SOMBRA POR ENCIMA DE LA IMAGEN PARA QUE EL TITULO SEA MÁS LEGIBLE*/
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+body .main .main-titulo .btn-intro {
+  width: 150px;
+}
+body .main .main-titulo .btn-intro .btn {
+  background-color: #A4B465;
+  border: 1px solid #1b1b1b;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  transition: all 0.5s ease;
+}
+body .main .main-titulo .btn-intro .btn:hover {
+  background-color: transparent;
+  color: #A4B465;
+  border: 1px solid #A4B465;
+  transform: scale(1.1);
+}
+body .main .main-titulo .contenedor-img-intro {
+  width: 100%;
+  height: auto;
 }
 body .bienvenida p {
   font-size: 1em;
@@ -76,7 +101,7 @@ body .bienvenida p {
 }
 body .trilogias-titulo,
 body .destacados-titulo {
-  font-family: "Roboto", sans-serif;
+  font-family: "Playfair Display", serif;
   margin: 15px;
   font-size: 25px;
   letter-spacing: 1px;
@@ -210,14 +235,15 @@ body .trilogias-contenedor .libro-trilogias p {
 .noticias-contenedor .noticias-titulo {
   font-size: 32px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   color: #ffffff;
-  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .noticias-contenedor .noticias-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
+  font-family: "Playfair Display", serif;
 }
 .noticias-contenedor .noticias-grid .noticia {
   background-color: #2a2a2a;
@@ -228,7 +254,7 @@ body .trilogias-contenedor .libro-trilogias p {
 }
 .noticias-contenedor .noticias-grid .noticia h3 {
   font-size: 20px;
-  color: #ffffff;
+  color: #A4B465;
   margin-bottom: 10px;
 }
 .noticias-contenedor .noticias-grid .noticia p {
@@ -237,12 +263,16 @@ body .trilogias-contenedor .libro-trilogias p {
   margin-bottom: 15px;
 }
 .noticias-contenedor .noticias-grid .noticia a {
+  letter-spacing: 1px;
   text-decoration: none;
-  color: #9ecfff;
+  color: #ffffff;
   font-weight: bold;
+  transition: all 0.5s ease;
+  display: inline-block;
 }
 .noticias-contenedor .noticias-grid .noticia a:hover {
-  text-decoration: underline;
+  color: #A4B465;
+  transform: scale(1.1);
 }
 
 /*APARTADO NOSOTROS*/
@@ -303,6 +333,10 @@ body .trilogias-contenedor .libro-trilogias p {
 }
 .contacto .contacto-texto {
   flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
   font-family: "Roboto", sans-serif;
 }
 .contacto .contacto-texto h2 {
@@ -315,6 +349,16 @@ body .trilogias-contenedor .libro-trilogias p {
   font-size: 1rem;
   line-height: 1.5;
   color: #555;
+}
+.contacto .contacto-texto .iconos-contacto {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+.contacto .contacto-texto .iconos-contacto a {
+  text-decoration: none;
+  color: #A4B465;
+  font-size: 40px;
 }
 .contacto .formulario {
   flex: 1 1 300px;
@@ -330,20 +374,20 @@ body .trilogias-contenedor .libro-trilogias p {
 .contacto .formulario textarea {
   width: 100%;
   padding: 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid #A4B465;
   border-radius: 8px;
   font-size: 1rem;
 }
 .contacto .formulario input {
   width: 100%;
   padding: 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid #A4B465;
   border-radius: 8px;
   font-size: 1rem;
 }
 .contacto .formulario button {
   padding: 0.8rem;
-  background-color: #333;
+  background-color: #A4B465;
   color: #fff;
   border: none;
   border-radius: 8px;

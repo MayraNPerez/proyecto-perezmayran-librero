@@ -36,7 +36,7 @@ body header nav .nav-links a {
   font-size: 20px;
 }
 body header nav .nav-links a:hover {
-  color: #fff;
+  color: #6F826A;
 }
 body .main { /*UTILIZO UNA IMAGEN A MODO DE FONDO COMO PORTADA CON EL NOMBRE DE LA LIBRERIA POR ENCIMA*/
   background: url(../images/libro3.jpg);
