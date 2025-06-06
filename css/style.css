@@ -59,12 +59,12 @@ body .main { /*CREO DOS COLUMNAS CON GRID, EN UNA UBICO EL TITULO CON UN PARRAFO
   background-color: #1b1b1b;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  position: relative;
+  grid-template-areas: "titulo imagen";
   align-items: center;
   gap: 2rem;
 }
 body .main .main-titulo {
-  position: relative;
+  grid-area: titulo;
 }
 body .main .main-titulo h5 {
   font-size: 25px;
@@ -99,7 +99,8 @@ body .main .main-titulo .btn-intro .btn:hover {
   border: 1px solid #A4B465;
   transform: scale(1.1);
 }
-body .main .main-titulo .contenedor-img-intro {
+body .main .contenedor-img-intro {
+  grid-area: imagen;
   width: 100%;
   height: auto;
 }
@@ -411,126 +412,6 @@ body .trilogias-contenedor .libro-trilogias p {
 
 .footer-p {
   text-align: center;
-}
-
-/*MEDIA QUERIES*/
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-  header nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-  .main {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
-    height: auto;
-    gap: 1.5rem;
-  }
-  .main .main-titulo h2 {
-    font-size: 60px;
-  }
-  .main .main-titulo p {
-    font-size: 16px;
-  }
-  .main .main-titulo .btn-intro {
-    width: 100%;
-  }
-  .main .main-titulo .btn-intro .btn {
-    font-size: 16px;
-    padding: 12px 0;
-  }
-  .destacados-contenedor,
-  .libro-seleccion {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-  .trilogias-contenedor {
-    grid-template-columns: 1fr;
-  }
-  .contenedor-nosotros {
-    padding: 1rem;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .contenedor-nosotros .nosotros-img {
-    max-width: 100%;
-    height: auto;
-  }
-  .contacto {
-    flex-direction: column;
-    padding: 1rem;
-  }
-  .contacto .contacto-texto,
-  .contacto .formulario {
-    flex: 1 1 100%;
-    height: auto;
-  }
-  footer.contenedor-ft {
-    height: auto;
-  }
-}
-@media (min-width: 601px) and (max-width: 900px) {
-  body {
-    font-size: 16px;
-  }
-  header nav {
-    justify-content: space-between;
-    padding: 0 2rem;
-  }
-  .nav-links {
-    gap: 20px;
-  }
-  .main {
-    padding: 0 5%;
-    grid-template-columns: 1fr 1fr;
-    height: auto;
-  }
-  .main .main-titulo h2 {
-    font-size: 90px;
-  }
-  .destacados-contenedor {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .contenedor-nosotros {
-    padding: 2rem;
-  }
-  .contenedor-nosotros .nosotros-texto,
-  .contenedor-nosotros .nosotros-img {
-    flex: 1 1 50%;
-  }
-  .contacto {
-    padding: 2rem;
-    flex-wrap: nowrap;
-  }
-  .contacto .contacto-texto,
-  .contacto .formulario {
-    flex: 1 1 45%;
-    height: auto;
-  }
-}
-@media (min-width: 901px) and (max-width: 1200px) {
-  body {
-    font-size: 18px;
-  }
-  header nav {
-    padding: 0 4rem;
-  }
-  .main {
-    padding: 0 10%;
-    height: 100vh;
-  }
-  .destacados-contenedor,
-  .libro-seleccion {
-    grid-template-columns: repeat(5, 1fr);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
